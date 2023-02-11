@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "NoShortsPlease",
+  "version": "1.0.0",
+  "description": "Removes those pesky shorts from your YouTube subscription feed.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/feed/*"
+      ],
+      "js": [
+        "build/js/packages/firefox-anti-shorts-extension/kotlin/kotlin-kotlin-stdlib-js-ir.js",
+        "build/js/packages/firefox-anti-shorts-extension/kotlin/kotlin_org_jetbrains_kotlinx_kotlinx_html.js",
+        "build/js/packages/firefox-anti-shorts-extension/kotlin/firefox-anti-shorts-extension.js"
+      ]
+    }
+  ]
+}
